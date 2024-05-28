@@ -50,12 +50,12 @@ const AddFoodItem: FC = () => {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => setOpen(false)} color="primary">
-            Cancel
-          </Button>
-          <Button onClick={handleSubmit} color="primary">
-            Add
-          </Button>
+         
+         
+          <div className="flex gap-4">
+          <button onClick={handleSubmit} className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">ADD Item</button>
+          <button onClick={() => setOpen(false)} className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white  py-2  duration-300 hover:bg-gray-200">Cancel</button>
+        </div>
         </DialogActions>
       </Dialog>
     </div>
