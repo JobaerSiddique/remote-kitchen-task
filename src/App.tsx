@@ -11,7 +11,7 @@ function App() {
     <>
   <FoodProvider>
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4">Remote Kitchen</h1>
+        <h1 className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black">Remote Kitchen</h1>
         <AddFoodItem />
         <FoodList />
       </div>

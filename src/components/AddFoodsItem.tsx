@@ -1,13 +1,14 @@
 import { FC, useState } from 'react';
 import { Button, TextField, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import { useFood } from '../contexts/FoodProvider';
-
+import {IoIosAddCircleOutline}  from "react-icons/io";
 const AddFoodItem: FC = () => {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const { addItem } = useFood();
+  
 
   const handleSubmit = () => {
     addItem({ id: Date.now(), name, description, price });
@@ -18,9 +19,9 @@ const AddFoodItem: FC = () => {
   };
 
   return (
-    <>
+    <div className="my-10">
       <Button variant="contained" color="primary" onClick={() => setOpen(true)}>
-        Add New Item
+     <span className='mr-2'> <IoIosAddCircleOutline /></span> Add New Item
       </Button>
       <Dialog open={open} onClose={() => setOpen(false)}>
         <DialogTitle>Add New Food Item</DialogTitle>
@@ -57,7 +58,7 @@ const AddFoodItem: FC = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </>
+    </div>
   );
 };
 

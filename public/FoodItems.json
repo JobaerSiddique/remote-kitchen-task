@@ -1,5 +1,5 @@
 [
-    { "id": 1, "name": "Pizza", "description": "Cheesy and delicious", "price": "$10" },
-    { "id": 2, "name": "Burger", "description": "Juicy and satisfying", "price": "$8" },
-    { "id": 3, "name": "Sushi", "description": "Fresh and healthy", "price": "$12" }
+    { "id": 1, "name": "Pizza", "description": "Cheesy and delicious", "price": "10" },
+    { "id": 2, "name": "Burger", "description": "Juicy and satisfying", "price": "8" },
+    { "id": 3, "name": "Sushi", "description": "Fresh and healthy", "price": "12" }
   ]
