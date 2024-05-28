@@ -22,16 +22,20 @@ const FoodItemCard: FC<{ item: FoodItem }> = ({ item }) => {
   };
 
   return (
-    <Card className="mb-4 transition-transform transform hover:scale-105">
+    <Card className="mb-4 transition-transform transform hover:scale-105 rounded-3xl">
       <CardContent>
         
          <div className="grid gap-2">
-          <h1 className="text-lg font-semibold ">{item.name}</h1>
+          <h1 className="text-lg font-bold uppercase ">{item.name}</h1>
           <p className="text-sm text-gray-500 dark:text-white/60">{item.description}</p>
-          <div className="text-lg font-semibold">${item.price}</div>
+          <div className="text-lg font-bold text-orange-600"><span>Price : </span>${item.price}</div>
         </div>
-        <Button onClick={() => setOpen(true)} className="relative h-10 w- origin-top transform rounded-lg border-2 border-sky-500 text-xl text-sky-500 before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full hover:before:bg-sky-500">Edit</Button>
-        <Button color="secondary" onClick={() => deleteItem(item.id)}>Delete</Button>
+        
+       
+        <div className="flex gap-4 justify-center my-5">
+          <button onClick={() => setOpen(true)} className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white duration-300 hover:bg-slate-950 sm:text-sm md:text-base ">Edit Item</button>
+          <button onClick={() => deleteItem(item.id)} className="rounded-md border border-black px-4 dark:border-white dark:hover:text-slate-800 dark:hover:bg-white flex justify-center py-2  duration-300 hover:bg-red-500">Delete</button>
+        </div>
       </CardContent>
       <Dialog open={open} onClose={() => setOpen(false)}>
         <DialogTitle>Edit Food Item</DialogTitle>
