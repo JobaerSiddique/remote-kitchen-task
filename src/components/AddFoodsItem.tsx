@@ -19,7 +19,7 @@ const AddFoodItem: FC = () => {
   };
 
   return (
-    <div className="my-10">
+    <div className="my-10 transition-transform transform hover:scale-105">
       <Button variant="contained" color="primary" onClick={() => setOpen(true)}>
      <span className='mr-2'> <IoIosAddCircleOutline /></span> Add New Item
       </Button>

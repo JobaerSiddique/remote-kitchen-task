@@ -1,5 +1,12 @@
 [
-    { "id": 1, "name": "Pizza", "description": "Cheesy and delicious", "price": "10" },
-    { "id": 2, "name": "Burger", "description": "Juicy and satisfying", "price": "8" },
-    { "id": 3, "name": "Sushi", "description": "Fresh and healthy", "price": "12" }
-  ]
+  { "id": 1, "name": "Pizza", "description": "Cheesy and delicious with a crispy crust and topped with fresh ingredients like tomatoes, olives, and mozzarella cheese.", "price": "10" },
+  { "id": 2, "name": "Burger", "description": "Juicy and satisfying beef patty served with lettuce, tomato, pickles, and a special sauce on a toasted sesame bun.", "price": "8" },
+  { "id": 3, "name": "Sushi", "description": "Fresh and healthy sushi rolls made with premium-grade fish, sticky rice, and wrapped in seaweed.", "price": "12" },
+  { "id": 4, "name": "Pasta", "description": "Creamy Alfredo pasta with a rich garlic and Parmesan sauce, tossed with tender fettuccine noodles.", "price": "11" },
+  { "id": 5, "name": "Salad", "description": "A refreshing garden salad with a mix of greens, cherry tomatoes, cucumbers, and a light vinaigrette dressing.", "price": "7" },
+  { "id": 6, "name": "Tacos", "description": "Authentic Mexican tacos with seasoned beef, fresh cilantro, diced onions, and a squeeze of lime.", "price": "9" },
+  { "id": 7, "name": "Steak", "description": "Grilled to perfection, this tender and juicy steak is served with a side of garlic mashed potatoes and steamed vegetables.", "price": "20" },
+  { "id": 8, "name": "Chicken Wings", "description": "Crispy chicken wings tossed in a spicy buffalo sauce, served with celery sticks and blue cheese dressing.", "price": "10" },
+  { "id": 9, "name": "Fish and Chips", "description": "Golden-battered fish fillets served with crispy fries and a side of tangy tartar sauce.", "price": "13" },
+  { "id": 10, "name": "Ice Cream", "description": "Rich and creamy vanilla ice cream topped with your choice of hot fudge, sprinkles, and a cherry on top.", "price": "5" }
+]

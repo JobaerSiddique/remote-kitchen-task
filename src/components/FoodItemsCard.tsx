@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Card, CardContent, Typography, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
+import { Card, CardContent,  Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
 import { useFood } from '../contexts/FoodProvider';
 
 type FoodItem = {
@@ -22,7 +22,7 @@ const FoodItemCard: FC<{ item: FoodItem }> = ({ item }) => {
   };
 
   return (
-    <Card className="mb-4">
+    <Card className="mb-4 transition-transform transform hover:scale-105">
       <CardContent>
         {/* <Typography variant="h5">{item.name}</Typography>
         <Typography variant="body2">{item.description}</Typography>
